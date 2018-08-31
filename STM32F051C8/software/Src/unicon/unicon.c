@@ -3,10 +3,10 @@
 #include "unicon.h"
 
 
-#define LEDn    7
+#define LEDn    4
 
-GPIO_TypeDef* LED_PORT[] = {LED2_GPIO_Port, LED5_GPIO_Port, LED6_GPIO_Port, LED7_GPIO_Port, STATUS_GPIO_Port, FAULT_GPIO_Port, COOL_GPIO_Port};
-const uint16_t LED_PIN[] = {LED2_Pin, LED5_Pin, LED6_Pin, LED7_Pin, STATUS_Pin, FAULT_Pin, COOL_Pin};
+GPIO_TypeDef* LED_PORT[] = {LED2_GPIO_Port, LED5_GPIO_Port, LED6_GPIO_Port, LED7_GPIO_Port};
+const uint16_t LED_PIN[] = {LED2_Pin, LED5_Pin, LED6_Pin, LED7_Pin};
 
 
 /*  */

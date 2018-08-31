@@ -122,7 +122,7 @@ int main(void)
 
     UserTimersInit();
 
-    StartUserPeriodicTimer(USER_TIMER3, 2000);
+    StartUserPeriodicTimer(USER_TIMER3, 25);
     StartUserPeriodicTimer(USER_TIMER4, 1000);
   /* USER CODE END 2 */
 

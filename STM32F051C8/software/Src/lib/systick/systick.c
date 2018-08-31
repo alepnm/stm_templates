@@ -192,17 +192,17 @@ static void UserTimersEventHandler(uint8_t timer) {
 
         break;
     case USER_TIMER2:
-        UNICON_LED_On(FAULT);
+        UNICON_LED_Off(LED2);
         break;
     case USER_TIMER3:
-        //UNICON_LED_Toggle(COOLER);
+        UNICON_LED_Toggle(LED7);
         break;
     case USER_TIMER4:
-        UNICON_LED_Toggle(STATUS);
+        UNICON_LED_Toggle(LED5);
 
-        StartUserOneShotTimer(USER_TIMER2, 10);
+        StartUserOneShotTimer(USER_TIMER2, 50);
 
-        UNICON_LED_Off(FAULT);
+        UNICON_LED_On(LED2);
         break;
     }
 
